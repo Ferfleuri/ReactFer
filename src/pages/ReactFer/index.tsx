@@ -28,7 +28,7 @@ export default function ReactFer() {
         <Text style={personalizar.nomeLogo}>Conjunto de Skincare</Text>
       </View>
       <Text style={personalizar.descricao}>Conjunto de Skincare Ordinary:
-      Tônico Facial ; Gel de limpeza ; Sabonete Facial ; Sérum .
+      Sérum ; Gel de limpeza ; Hidratante Facial ; Protetor Solar .
       </Text>
       <Text style={personalizar.preco}>R$210.00</Text>
     </View>
@@ -48,8 +48,7 @@ const personalizar = StyleSheet.create({
   nomeLogo: {
     fontSize: 16,
     lineHeight: 26,
-    marginLeft: 12,
-    fontFamily: "MontserratBold"
+    marginLeft: 12
   },
   imagemLogo: {
     width: 32,
