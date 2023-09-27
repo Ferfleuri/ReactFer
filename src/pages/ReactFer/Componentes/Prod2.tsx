@@ -1,7 +1,7 @@
 import React from "react";
 import { Image, Text, StyleSheet, Dimensions, View } from "react-native";
 
-import produto2 from "../../../../assets/produto.jpg";
+import produto2 from "../../../../assets/produto2.jpg";
 import logo from "../../../../assets/logo.png";
 
 const width = Dimensions.get("screen").width;
