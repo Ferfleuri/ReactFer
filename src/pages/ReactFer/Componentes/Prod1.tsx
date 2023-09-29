@@ -3,6 +3,13 @@ import { Image, Text, StyleSheet, Dimensions, View } from "react-native";
 
 import produto from '../../../../assets/produto.jpg'
 import logo from '../../../../assets/logo.png'
+import reactFer from "../mocks/reactFer";
+
+type Props = {
+  nomeLogo: String,
+  descricao: String,
+  preco: String
+}
 
 const width = Dimensions.get('screen').width;
 
@@ -13,13 +20,12 @@ export default function Prod1() {
       <View style={personalizar.skincare}>
         <View style={personalizar.logo}>
           <Image style={personalizar.imagemLogo} source={logo} />
-          <Text style={personalizar.nomeLogo}>Conjunto de Skincare</Text>
+          <Text style={personalizar.nomeLogo}>{reactFer.Prod1.nomeLogo}</Text>
         </View>
         <Text style={personalizar.descricao}>
-          Conjunto de Skincare Ordinary: Tônico Facial ; Gel de limpeza ;
-          Sabonete Facial ; Sérum .
+        {reactFer.Prod1.descricao}
         </Text>
-        <Text style={personalizar.preco}>R$180.00</Text>
+        <Text style={personalizar.preco}>{reactFer.Prod1.preco}</Text>
       </View>
     </>
   );
